@@ -2,11 +2,16 @@
 
 -include("/opt/local/lib/erlang/lib/xmerl-1.1.8/include/xmerl.hrl").
 
--export([process_pnml/0]).
+-export([process_pnml/0,loop/1,place/1,start/0]).
 
-place() ->
+place(Msg) ->
 	io:format("place created~n"),
-        false.
+	receive
+		{Token} ->
+			 io:format("token received~n");
+		 Other ->  
+                        loop(Msg)
+	end.
 
 get_id_attr(Node) ->
 	#xmlElement{attributes=Attribs} = Node,
@@ -23,6 +28,7 @@ create_object([Node|Rest]) ->
 		place ->
 			ID = get_id_attr(Node),
 			register(list_to_atom(ID), spawn(mod2, place, [])),
+			io:format("registered ~w~n", [registered()]),
 			io:format("new place ~s ~n", [ID]);
 		transition ->
 			ID = get_id_attr(Node),
@@ -38,6 +44,23 @@ create_object([Node|Rest]) ->
 create_object([]) ->
 	done.
 
+loop(Val) -> 
+	receive
+		init ->
+			process_pnml(); 
+		Other -> % All other messages 
+			loop(Val) 
+	end. 
+
+
+start() -> 
+	App = spawn(mod2, loop, [0]),
+	App ! init,
+	done.
+
 process_pnml() ->
 	{Xml, _} = xmerl_scan:file("example.pnml"),
-    	create_object(xmerl_xpath:string("/pnml/net/child::*", Xml)).
+    	create_object(xmerl_xpath:string("/pnml/net/child::*", Xml)),
+	p1 ! 0,
+	registered().
+
