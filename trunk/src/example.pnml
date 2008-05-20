@@ -48,23 +48,23 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
       <name>
         <text>Verificar Presupuesto</text>
         <graphics>
-          <offset y="150" x="120"/>
+          <offset y="160" x="130"/>
         </graphics>
       </name>
       <graphics>
-        <position y="100" x="170"/>
+        <position y="110" x="180"/>
         <dimension y="40" x="40"/>
       </graphics>
       <toolspecific version="1.0" tool="WoPeD">
         <trigger type="200" id="">
           <graphics>
-            <position y="75" x="180"/>
+            <position y="85" x="190"/>
             <dimension y="22" x="24"/>
           </graphics>
         </trigger>
         <transitionResource roleName="Coordinador" organizationalUnitName="Coordinadores">
           <graphics>
-            <position y="43" x="160"/>
+            <position y="63" x="190"/>
             <dimension y="22" x="60"/>
           </graphics>
         </transitionResource>
@@ -80,7 +80,7 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
         </graphics>
       </name>
       <graphics>
-        <position y="57" x="500"/>
+        <position y="60" x="500"/>
         <dimension y="40" x="40"/>
       </graphics>
       <toolspecific version="1.0" tool="WoPeD">
@@ -100,7 +100,7 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
         <timeUnit>1</timeUnit>
       </toolspecific>
     </transition>
-    <arc target="t1" source="p1" id="a9">
+    <arc target="t1" source="p1" id="a23">
       <inscription>
         <text>1</text>
       </inscription>
@@ -111,7 +111,7 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
         <displayProbabilityPosition y="0.0" x="500.0"/>
       </toolspecific>
     </arc>
-    <arc target="t2" source="p2" id="a5">
+    <arc target="p3" source="t2" id="a10">
       <inscription>
         <text>1</text>
       </inscription>
@@ -122,7 +122,7 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
         <displayProbabilityPosition y="0.0" x="500.0"/>
       </toolspecific>
     </arc>
-    <arc target="p2" source="t1" id="a8">
+    <arc target="p2" source="t1" id="a22">
       <inscription>
         <text>1</text>
       </inscription>
@@ -133,7 +133,7 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
         <displayProbabilityPosition y="0.0" x="500.0"/>
       </toolspecific>
     </arc>
-    <arc target="p3" source="t2" id="a6">
+    <arc target="t2" source="p2" id="a11">
       <inscription>
         <text>1</text>
       </inscription>
@@ -152,12 +152,15 @@ Created with Workflow PetriNet Designer Version 1.0 (woped.org)
       <treeWidth>196</treeWidth>
       <resources>
         <resource Name="punto-de-cuenta"/>
+        <resource Name="expediente"/>
         <role Name="Coordinador"/>
         <role Name="Analista"/>
         <organizationUnit Name="Coordinadores"/>
         <organizationUnit Name="Analistas"/>
         <resourceMapping resourceID="punto-de-cuenta" resourceClass="Analista"/>
+        <resourceMapping resourceID="expediente" resourceClass="Analista"/>
         <resourceMapping resourceID="punto-de-cuenta" resourceClass="Coordinador"/>
+        <resourceMapping resourceID="expediente" resourceClass="Coordinador"/>
       </resources>
     </toolspecific>
   </net>
