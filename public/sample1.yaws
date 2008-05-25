@@ -1,0 +1,13 @@
+<html>
+ <h1>Foobar</h1>
+ <erl>
+
+ out(Arg) ->
+    code:load_file(ktuo_json), 
+    Msg =  ktuo_json:encode([{ddddl, {string, "Value"}}]),
+    {html, Msg}.
+ </erl>
+ 
+ <h1>Baz</h1>
+ 
+ </html>
