@@ -10,7 +10,7 @@
 %%
 
 start() -> 
-    register(netsssuper, spawn(erlflow_net, netsuper,[[]])),
+    register(netsuper, spawn(erlflow_net, netsuper,[[]])),
     %spawn(erlflow_net, netsuper,[[]]),
     erlflow_xpdl_parser:process("example.xpdl"),
     done.
