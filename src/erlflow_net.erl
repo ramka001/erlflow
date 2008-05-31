@@ -104,11 +104,11 @@ netsuper(Networks) ->
     receive
         {add_net, ID, Name} ->
             io:format("add_network ~p ~n", [ID]),
-            NewNetworks = lists:append(Networks, [{ID,Name}]),
+            NewNetworks = lists:append(Networks, {atom_to_list(ID),Name}),
             register(ID, spawn(erlflow_net, network, [[],[]])),
             netsuper(NewNetworks);
         {get_status, From} ->
-            From ! [Networks],
+            From ! Networks,
             io:format("status of net is: networks =~p ~n", [Networks]),
             netsuper(Networks);
         _else ->
