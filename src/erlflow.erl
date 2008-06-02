@@ -1,4 +1,4 @@
-%% Author: josemanuelp
+%% Authou: josemanuelp
 %% Created: 17/05/2008
 %% Description: TODO: Add description to erlflow
 -module(erlflow).
