@@ -14,9 +14,7 @@ out(A) ->
     {content, "text/plain",  ktuo_json:encode(prepare_json([Net]))}.
              
 prepare_json({Key, Value}) ->
-  io:format("thread was here ~n"),
-  {Key, {string, Value}};
+    [{id, {string, Key}},{name,{string, Value}}];
 prepare_json([Head | Tail]) ->
-  lists:merge([prepare_json(Head)],prepare_json(Tail));
-prepare_json([]) -> [] .
-
+    [{networks, lists:merge([prepare_json(Head)],prepare_json(Tail))}];
+prepare_json([]) -> [].
