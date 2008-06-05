@@ -4463,3 +4463,20 @@ Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
 =INFO REPORT==== 1-Jun-2008::15:57:54 ===
 Yaws: Listening to 0.0.0.0:80 for servers
  - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 2-Jun-2008::22:56:49 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 2-Jun-2008::22:56:49 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 3-Jun-2008::22:54:21 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 3-Jun-2008::22:54:21 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 3-Jun-2008::23:54:21 ===
+Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"

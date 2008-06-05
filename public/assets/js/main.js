@@ -15,7 +15,7 @@
                 }
                 YAHOO.util.Dom.addClass(YAHOO.example.app.tabView._tabParent, 'loading');            
                 if (!YAHOO.example.app.inboxLoaded) {
-                    var transactionObj = YAHOO.util.Get.script('assets/js/inbox.js', { autopurge: true });
+                    var transactionObj = YAHOO.util.Get.script('/assets/js/inbox.js', { autopurge: true });
                 } else {
                     if (reload) {
                         YAHOO.example.app.reloadData(u);
@@ -30,14 +30,14 @@
 
     //Call loader the first time
     var loader = new YAHOO.util.YUILoader({
-        base: '../../build/',
+        base: 'build/',
         //Get these modules
         require: ['reset-fonts-grids', 'utilities', 'logger', 'button', 'container', 'tabview', 'selector', 'resize', 'layout'],
         rollup: true,
         onSuccess: function() {
             //Load the global CSS file.
             YAHOO.log('Main files loaded..', 'info', 'main.js');
-            YAHOO.util.Get.css('assets/css/example1.css');
+            YAHOO.util.Get.css('/assets/css/example1.css');
 
             YAHOO.log('Create the first layout on the page', 'info', 'main.js');
             YAHOO.example.app.layout = new YAHOO.widget.Layout({

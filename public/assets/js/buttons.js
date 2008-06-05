@@ -5,7 +5,7 @@
     YAHOO.log('buttons.js loaded', 'info', 'button.js');
     //Create this loader instance and ask for the Button module
     var loader = new YAHOO.util.YUILoader({
-        base: '../../build/',
+        base: '/build/',
         require: ['button'],
         ignore: ['containercore'],
         onSuccess: function() {
@@ -19,7 +19,7 @@
             });
             YAHOO.log('Create the Check Mail button', 'info', 'button.js');
             var b1 = new YAHOO.widget.Button({
-                label: 'Check Mail',
+                label: 'Verificar',
                 id: 'checkButton',
                 container: Dom.get('check_buttons')
             });
@@ -37,9 +37,9 @@
             });
             YAHOO.log('Create the New Message button', 'info', 'button.js');
             var b2 = new YAHOO.widget.Button({
-                label: 'New',
+                label: 'Nuevo',
                 id: 'newButton',
-                title: 'New Message',
+                title: 'Nuevo Caso',
                 container: Dom.get('check_buttons')
             });
             //inject a span for the icon
@@ -51,7 +51,7 @@
                 if (!YAHOO.example.app.editor) {
                     YAHOO.log('No editor present, add the tab', 'info', 'button.js');
                     var cTab = new YAHOO.widget.Tab({
-                        label: '<span class="close"></span><span class="icon"></span>New Message',
+                        label: '<span class="close"></span><span class="icon"></span>Nuevo Caso',
                         id: 'composeView',
                         active: true,
                         contentEl: Dom.get('composeViewEl')
