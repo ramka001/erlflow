@@ -1,27 +1,28 @@
 (function() {
-    YAHOO.example.app = {
+	erlflow =  new Object();
+    erlflow.app = {
         inboxLoaded: false,
         inboxLoading: false,
         feedURL: '/erlflow',
         getFeed: function(u) {
-            if (!YAHOO.example.app.inboxLoading) {
+            if (!erlflow.app.inboxLoading) {
                 var reload = true;
-                YAHOO.example.app.inboxLoading = true;
+                erlflow.app.inboxLoading = true;
                 if (u) {
-                    if (YAHOO.example.app.feedURL === (u + '?count=50')) {
+                    if (erlflow.app.feedURL === (u + '?count=50')) {
                         reload = false;
                     }
-                    YAHOO.example.app.feedURL = u + '?count=50';
+                    erlflow.app.feedURL = u + '?count=50';
                 }
-                YAHOO.util.Dom.addClass(YAHOO.example.app.tabView._tabParent, 'loading');            
-                if (!YAHOO.example.app.inboxLoaded) {
+                YAHOO.util.Dom.addClass(erlflow.app.tabView._tabParent, 'loading');            
+                if (!erlflow.app.inboxLoaded) {
                     var transactionObj = YAHOO.util.Get.script('/assets/js/inbox.js', { autopurge: true });
                 } else {
                     if (reload) {
-                        YAHOO.example.app.reloadData(u);
+                        erlflow.app.reloadData(u);
                     } else {
-                        YAHOO.util.Dom.removeClass(YAHOO.example.app.tabView._tabParent, 'loading');            
-                        YAHOO.example.app.inboxLoading = false;
+                        YAHOO.util.Dom.removeClass(erlflow.app.tabView._tabParent, 'loading');            
+                        erlflow.app.inboxLoading = false;
                     }
                 }
             }
@@ -40,7 +41,7 @@
             YAHOO.util.Get.css('/assets/css/example1.css');
 
             YAHOO.log('Create the first layout on the page', 'info', 'main.js');
-            YAHOO.example.app.layout = new YAHOO.widget.Layout({
+            erlflow.app.layout = new YAHOO.widget.Layout({
                 minWidth: 1000,
                 units: [
                     { position: 'top', height: 45, resize: false, body: 'top1' },
@@ -50,15 +51,15 @@
                 ]
             });
             //On resize, resize the left and right column content
-            YAHOO.example.app.layout.on('resize', function() {
+            erlflow.app.layout.on('resize', function() {
                 var l = this.getUnitByPosition('left');
                 var th = l.get('height') - YAHOO.util.Dom.get('folder_top').offsetHeight;
                 var h = th - 4; //Borders around the 2 areas
                 h = h - 9; //Padding between the 2 parts
                 YAHOO.util.Dom.setStyle('folder_list', 'height', h + 'px');
-            }, YAHOO.example.app.layout, true);
+            }, erlflow.app.layout, true);
             //On render, load tabview.js and button.js
-            YAHOO.example.app.layout.on('render', function() {
+            erlflow.app.layout.on('render', function() {
                 window.setTimeout(function() {
                     YAHOO.util.Get.script('assets/js/logger.js');
                     YAHOO.util.Get.script('assets/js/tabview.js'); 
@@ -66,16 +67,16 @@
                     YAHOO.util.Get.script('assets/js/calendar.js');
                 }, 0);
 
-                YAHOO.example.app.layout.getUnitByPosition('right').set('animate', false);
-                YAHOO.example.app.layout.getUnitByPosition('right').collapse();
+                erlflow.app.layout.getUnitByPosition('right').set('animate', false);
+                erlflow.app.layout.getUnitByPosition('right').collapse();
                 YAHOO.util.Dom.setStyle(document.body, 'visibility', 'visible');
                 setTimeout(function() {
-                    YAHOO.example.app.layout.resize();
-                    YAHOO.example.app.layout.getUnitByPosition('right').set('animate', true);
+                    erlflow.app.layout.resize();
+                    erlflow.app.layout.getUnitByPosition('right').set('animate', true);
                 }, 1000);
             });
             //Render the layout
-            YAHOO.example.app.layout.render();
+            erlflow.app.layout.render();
             //Setup the click listeners on the folder list
             YAHOO.util.Event.on('folder_list', 'click', function(ev) {
                 var tar = YAHOO.util.Event.getTarget(ev);
@@ -91,7 +92,7 @@
                         YAHOO.util.Dom.addClass(tar.parentNode, 'selected');
                         YAHOO.util.Event.stopEvent(ev);
                         var title = tar.innerHTML;
-                        var t = YAHOO.example.app.tabView.get('tabs');
+                        var t = erlflow.app.tabView.get('tabs');
                         for (var i = 0; i < t.length; i++) {
                             if (t[i].get('id') == 'inboxView') {
                                 t[i].set('label', title);
@@ -102,8 +103,8 @@
                                 if (feedName.indexOf('inbox') != -1) {
                                     u = 'http:/'+'/rss.groups.yahoo.com/group/ydn-javascript/rss';
                                 }
-                                YAHOO.example.app.getFeed(u);
-                                YAHOO.example.app.tabView.set('activeTab', t[i]);
+                                erlflow.app.getFeed(u);
+                                erlflow.app.tabView.set('activeTab', t[i]);
                             }
                         }
                     }
@@ -132,7 +133,7 @@
             panel.render(document.body);
 
             //Create a namepaced alert method
-            YAHOO.example.app.alert = function(str) {
+            erlflow.app.alert = function(str) {
                 YAHOO.log('Firing panel setBody with string: ' + str, 'info', 'main.js');
                 //Set the body to the string passed
                 panel.setBody(str);
@@ -144,7 +145,7 @@
                 panel.show();
             };
 
-            //YAHOO.example.app.alert('This is not a new product from Yahoo! or YUI, just a demonstration of how YUI components can work in concert in the context of a more complex application.');
+            //erlflow.app.alert('This is not a new product from Yahoo! or YUI, just a demonstration of how YUI components can work in concert in the context of a more complex application.');
         }
     });
     loader.insert();

@@ -9,7 +9,7 @@
         ignore: ['containercore'],
         onSuccess: function() {
             YAHOO.log('Create a Toolbar above the To/From Fields', 'info', 'editor.js');
-            YAHOO.example.app.composeToolbar = new YAHOO.widget.Toolbar('composeBar', {
+            erlflow.app.composeToolbar = new YAHOO.widget.Toolbar('composeBar', {
                 buttons: [
                     { id: 'tb_delete', type: 'push', label: 'Send', value: 'send'},
                     { id: 'tb_reply', type: 'push', label: 'Attach', value: 'attach' },
@@ -19,26 +19,26 @@
                 ]
             });
             //Show an alert message with the button they clicked            
-            YAHOO.example.app.composeToolbar.on('buttonClick', function(ev) {
-                YAHOO.example.app.alert('You clicked: ' + ev.button.label);
+            erlflow.app.composeToolbar.on('buttonClick', function(ev) {
+                erlflow.app.alert('You clicked: ' + ev.button.label);
             });
             
             //Editor startResize method - Disables the editor so we can drga over it.
             var editorStartResize = function() {
-                YAHOO.example.app.editor.set('disabled', true);
+                erlflow.app.editor.set('disabled', true);
             };
             //Custom editor resize method
             var editorResize = function() {
                 var h = YAHOO.util.Dom.get('composeViewEl').parentNode.clientHeight - (YAHOO.util.Dom.get('composeBarWrap').clientHeight);
-                var th = YAHOO.example.app.editor.toolbar.get('element').clientHeight;
+                var th = erlflow.app.editor.toolbar.get('element').clientHeight;
                 var newH = (h - th);
-                YAHOO.example.app.editor.set('height', newH + 'px');
-                YAHOO.example.app.editor.set('width', YAHOO.example.app.layout.getSizes().center.w + 'px');
-                YAHOO.example.app.editor.set('disabled', false);
+                erlflow.app.editor.set('height', newH + 'px');
+                erlflow.app.editor.set('width', erlflow.app.layout.getSizes().center.w + 'px');
+                erlflow.app.editor.set('disabled', false);
             };
             YAHOO.log('Create the Editor', 'info', 'editor.js');
             var editor = new YAHOO.widget.Editor('compose', {
-                width: (YAHOO.example.app.layout.getUnitByPosition('center').getSizes().body.w - 2) + 'px'
+                width: (erlflow.app.layout.getUnitByPosition('center').getSizes().body.w - 2) + 'px'
             });
             editor.on('afterRender', function() {
                 YAHOO.log('The editor is loaded, resize the editor to fit the layout', 'info', 'editor.js');
@@ -51,17 +51,17 @@
             editor._defaultToolbar.titlebar = false;
             YAHOO.log('Render the editor', 'info', 'editor.js');
             editor.render();
-            YAHOO.example.app.editor = editor;
+            erlflow.app.editor = editor;
 
             //On resize and start resize handlers
-            YAHOO.example.app.layout.on('startResize', editorStartResize);
-            YAHOO.example.app.layout.on('resize', editorResize);
+            erlflow.app.layout.on('startResize', editorStartResize);
+            erlflow.app.layout.on('resize', editorResize);
             //Method to destroy the editor.
-            YAHOO.example.app.destroyEditor = function() {
+            erlflow.app.destroyEditor = function() {
                 YAHOO.log('Destroying the Editor instance and HTML', 'info', 'editor.js');
-                YAHOO.example.app.layout.unsubscribe('startResize', editorStartResize);
-                YAHOO.example.app.layout.unsubscribe('resize', editorResize);
-                YAHOO.example.app.editor = null;
+                erlflow.app.layout.unsubscribe('startResize', editorStartResize);
+                erlflow.app.layout.unsubscribe('resize', editorResize);
+                erlflow.app.editor = null;
             };
 
             YAHOO.log('Setup the AutoComplete for the To Field', 'info', 'editor.js');

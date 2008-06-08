@@ -7,7 +7,7 @@
         base: '../../build/',
         require: ['logger'],
         onSuccess: function() {
-            var r = YAHOO.example.app.layout.getUnitByPosition('right'),
+            var r = erlflow.app.layout.getUnitByPosition('right'),
             w = r.getSizes().body.w,
             h = r.getSizes().body.h;
 
@@ -27,8 +27,8 @@
                 logger.resume();
             });
 
-            YAHOO.example.app.layout.on('resize', function() {
-                var r = YAHOO.example.app.layout.getUnitByPosition('right'),
+            erlflow.app.layout.on('resize', function() {
+                var r = erlflow.app.layout.getUnitByPosition('right'),
                 w = r.getSizes().body.w,
                 h = r.getSizes().body.h;
                 Dom.setStyle(YAHOO.util.Selector.query('div.yui-log-bd', r.body), 'height', h + 'px');
