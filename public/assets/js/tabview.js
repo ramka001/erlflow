@@ -4,7 +4,7 @@
         Sel = YAHOO.util.Selector;
         YAHOO.log('tabview.js loaded', 'info', 'tabview.js');
         //Set the time on the home screen
-        YAHOO.example.app.setTime = function() {
+        erlflow.app.setTime = function() {
             var d = new Date();
             var weekday = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
             var h = d.getHours(), a = 'am';
@@ -31,18 +31,18 @@
         };
         
         //Method to Resize the tabview
-        YAHOO.example.app.resizeTabView = function() {
-            var ul = YAHOO.example.app.tabView._tabParent.offsetHeight;
-            Dom.setStyle(YAHOO.example.app.tabView._contentParent, 'height', ((YAHOO.example.app.layout.getSizes().center.h - ul) - 2) + 'px');
+        erlflow.app.resizeTabView = function() {
+            var ul = erlflow.app.tabView._tabParent.offsetHeight;
+            Dom.setStyle(erlflow.app.tabView._contentParent, 'height', ((erlflow.app.layout.getSizes().center.h - ul) - 2) + 'px');
         };
         
         //Listen for the layout resize and call the method
-        YAHOO.example.app.layout.on('resize', YAHOO.example.app.resizeTabView);
+        erlflow.app.layout.on('resize', erlflow.app.resizeTabView);
         //Create the tabView
         YAHOO.log('Creating the main TabView instance', 'info', 'tabview.js');
-        YAHOO.example.app.tabView = new YAHOO.widget.TabView();
+        erlflow.app.tabView = new YAHOO.widget.TabView();
         //Create the Home tab       
-        YAHOO.example.app.tabView.addTab( new YAHOO.widget.Tab({
+        erlflow.app.tabView.addTab( new YAHOO.widget.Tab({
             //Inject a span for the icon
             label: '<span></span>Principal',
             id: 'homeView',
@@ -50,49 +50,49 @@
             active: true
         }));
         //Create the Inbox tab
-        YAHOO.example.app.tabView.addTab( new YAHOO.widget.Tab({
+        erlflow.app.tabView.addTab( new YAHOO.widget.Tab({
             //Inject a span for the icon
             label: '<span></span>Tareas',
             id: 'inboxView',
             content: ''
 
         }));
-        YAHOO.example.app.tabView.on('activeTabChange', function(ev) {
+        erlflow.app.tabView.on('activeTabChange', function(ev) {
             //Tabs have changed
             if (ev.newValue.get('id') == 'inboxView') {
                 //inbox tab was selected
-                if (!YAHOO.example.app.inboxLoaded && !YAHOO.example.app.inboxLoading) {
+                if (!erlflow.app.inboxLoaded && !erlflow.app.inboxLoading) {
                     YAHOO.log('Fetching the inbox.js file..', 'info', 'tabview.js');
                     YAHOO.log('Inbox is not loaded yet, use Get to fetch it', 'info', 'tabview.js');
                     YAHOO.log('Adding loading class to tabview', 'info', 'tabview.js');
-                    YAHOO.example.app.getFeed();
+                    erlflow.app.getFeed();
                 }
             }
             //Is an editor present?
-            if (YAHOO.example.app.editor) {
+            if (erlflow.app.editor) {
                 if (ev.newValue.get('id') == 'composeView') {
                     YAHOO.log('Showing the editor', 'info', 'tabview.js');
-                    YAHOO.example.app.editor.show();
-                    YAHOO.example.app.editor.set('disabled', false);
+                    erlflow.app.editor.show();
+                    erlflow.app.editor.set('disabled', false);
                 } else {
                     YAHOO.log('Hiding the editor', 'info', 'tabview.js');
-                    YAHOO.example.app.editor.hide();
-                    YAHOO.example.app.editor.set('disabled', true);
+                    erlflow.app.editor.hide();
+                    erlflow.app.editor.set('disabled', true);
                 }
             }
             //Resize to fit the new content
-            YAHOO.example.app.layout.resize();
+            erlflow.app.layout.resize();
         });
         //Add the tabview to the center unit of the main layout
-        var el = YAHOO.example.app.layout.getUnitByPosition('center').get('wrap');
-        YAHOO.example.app.tabView.appendTo(el);
+        var el = erlflow.app.layout.getUnitByPosition('center').get('wrap');
+        erlflow.app.tabView.appendTo(el);
 
         //resize the TabView
-        YAHOO.example.app.resizeTabView();
+        erlflow.app.resizeTabView();
         //Set the time on the home screen
-        YAHOO.example.app.setTime();
+        erlflow.app.setTime();
         //Setup the interval to update the time
-        setInterval(YAHOO.example.app.setTime, 60000);
+        setInterval(erlflow.app.setTime, 60000);
 
         
         YAHOO.log('Fetch the news feed', 'info', 'tabview.js');
@@ -101,13 +101,13 @@
 
         //When inboxView is available, update the height..
         Event.onAvailable('inboxView', function() {
-            var t = YAHOO.example.app.tabView.get('tabs');
+            var t = erlflow.app.tabView.get('tabs');
             for (var i = 0; i < t.length; i++) {
                 if (t[i].get('id') == 'inboxView') {
                     var el = t[i].get('contentEl');
                     el.id = 'inboxHolder';
                     YAHOO.log('Setting the height of the TabViews content parent', 'info', 'tabview.js');
-                    Dom.setStyle(el, 'height', Dom.getStyle(YAHOO.example.app.tabView._contentParent, 'height'));
+                    Dom.setStyle(el, 'height', Dom.getStyle(erlflow.app.tabView._contentParent, 'height'));
                     
                 }
             }
