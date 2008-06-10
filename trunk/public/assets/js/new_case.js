@@ -1,6 +1,7 @@
 (function(){
 	var Dom = YAHOO.util.Dom,
         Event = YAHOO.util.Event;
+		//YAHOO.util.Get.script('assets/js/case_editor.js');
     function init(){
     
         // Define various event handlers for Dialog
@@ -16,7 +17,7 @@
                     label: '<span class="close"></span><span class="icon"></span>Nuevo Caso',
                     id: 'composeView',
                     active: true,
-                    contentEl: Dom.get('composeViewEl1')
+                    contentEl: Dom.get('composeViewEl')
                 });
                 //Add the close button to the tab
                 Event.on(cTab.get('labelEl').getElementsByTagName('span')[0], 'click', function(ev){
@@ -32,7 +33,7 @@
                 erlflow.app.tabView.addTab(cTab);
                 YAHOO.log('Load the Editor', 'info', 'button.js');
                 window.setTimeout(function(){
-                    var transactionObj = YAHOO.util.Get.script('assets/js/editor.js', {
+                    var transactionObj = YAHOO.util.Get.script('assets/js/case_editor.js', {
                         autopurge: true
                     });
                 }, 0);
@@ -68,7 +69,8 @@
             buttons: [{
                 text: "Submit",
                 handler: handleSubmit,
-                isDefault: true
+                isDefault: true,
+				disabled: true
             }, {
                 text: "Cancel",
                 handler: handleCancel
@@ -98,7 +100,7 @@
         
         YAHOO.util.Event.addListener("newButton", "click", erlflow.app.new_case.show, erlflow.app.new_case, true);
         //YAHOO.util.Event.addListener("hide", "click", erlflow.app.new_case.hide, YAHOO.erlflow.app.new_case, true);
-        YAHOO.util.Get.script('/assets/js/erlflow.js');
+        YAHOO.util.Get.script('/assets/js/ef/nets_tree.js');
     }
     
     YAHOO.util.Event.onDOMReady(init);

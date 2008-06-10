@@ -4497,3 +4497,3580 @@ Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
 =INFO REPORT==== 7-Jun-2008::21:17:04 ===
 Yaws: Listening to 0.0.0.0:80 for servers
  - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::12:10:50 ===
+Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
+=INFO REPORT==== 8-Jun-2008::14:20:17 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:20:17 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::14:20:18 ===
+Yaws process died: {function_clause,[{yaws_server,binary_size,[0,undefined]},
+                                     {yaws_server,binary_size,2},
+                                     {yaws_server,deliver_accumulated,5},
+                                     {yaws_server,finish_up_dyn_file,2},
+                                     {yaws_server,aloop,3},
+                                     {yaws_server,acceptor0,2},
+                                     {proc_lib,init_p,5}]}
+
+=ERROR REPORT==== 8-Jun-2008::14:20:58 ===
+Yaws process died: {function_clause,[{yaws_server,binary_size,[0,undefined]},
+                                     {yaws_server,binary_size,2},
+                                     {yaws_server,deliver_accumulated,5},
+                                     {yaws_server,finish_up_dyn_file,2},
+                                     {yaws_server,aloop,3},
+                                     {yaws_server,acceptor0,2},
+                                     {proc_lib,init_p,5}]}
+
+=INFO REPORT==== 8-Jun-2008::14:21:50 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:21:50 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::14:22:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:22:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::14:23:01 ===
+Yaws process died: {function_clause,[{yaws_server,binary_size,[0,undefined]},
+                                     {yaws_server,binary_size,2},
+                                     {yaws_server,deliver_accumulated,5},
+                                     {yaws_server,finish_up_dyn_file,2},
+                                     {yaws_server,aloop,3},
+                                     {yaws_server,acceptor0,2},
+                                     {proc_lib,init_p,5}]}
+
+=ERROR REPORT==== 8-Jun-2008::14:23:03 ===
+Yaws process died: {function_clause,[{yaws_server,binary_size,[0,undefined]},
+                                     {yaws_server,binary_size,2},
+                                     {yaws_server,deliver_accumulated,5},
+                                     {yaws_server,finish_up_dyn_file,2},
+                                     {yaws_server,aloop,3},
+                                     {yaws_server,acceptor0,2},
+                                     {proc_lib,init_p,5}]}
+
+=INFO REPORT==== 8-Jun-2008::14:29:20 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:29:20 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::14:30:40 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:30:40 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::14:31:04 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:31:04 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::14:31:15 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,"n"},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/n"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::14:31:20 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,"net"},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::14:31:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:31:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::14:32:39 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::14:32:39 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:09:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:09:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:10:53 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:10:53 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:15:18 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:15:18 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:16:22 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:16:22 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:16:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:16:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:17:40 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:17:40 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:18:25 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:18:25 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:18:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:18:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:18:37 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:18:37 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:19:14 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:19:14 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:19:18 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:19:18 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:21:27 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:21:27 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:21:31 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:21:31 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:21:54 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:21:54 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:21:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:21:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:22:16 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:22:16 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:22:22 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:22:22 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:30:11 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:30:11 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:30:14 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:30:14 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:30:41 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:30:41 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:32:27 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:32:27 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:32:33 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:32:33 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:32:58 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:32:58 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:33:04 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:33:04 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:34:01 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:34:01 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:34:04 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:34:04 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:34:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,
+                              ["~w:~w~n",{format,"nets",["nets"]}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:34:40 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:34:40 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:34:41 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,
+                              ["~w:~w~n",{format,"nets","nets"}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:35:00 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:35:00 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:40:52 ===
+Failed to start: There is already a yaws system running with the same 
+ id <"erlflow"> on this computer and this user, 
+ set another id in the yaws conf file 
+
+
+=INFO REPORT==== 8-Jun-2008::22:40:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:40:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:50:10 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:50:10 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:50:12 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:50:33 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:50:33 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:50:36 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:50:43 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:50:43 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:50:44 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::22:50:45 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:51:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:51:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:51:35 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:51:35 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:51:37 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,[{io,fotmat,["hola~n"]},
+                {myappmod,prepare_response,1},
+                {myappmod,out,1},
+                {yaws_server,deliver_dyn_part,8},
+                {yaws_server,aloop,3},
+                {yaws_server,acceptor0,2},
+                {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:51:54 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:51:54 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:51:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:51:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:51:57 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,[{io,fortmat,["hola~n"]},
+                {myappmod,prepare_response,1},
+                {myappmod,out,1},
+                {yaws_server,deliver_dyn_part,8},
+                {yaws_server,aloop,3},
+                {yaws_server,acceptor0,2},
+                {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:52:05 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:52:05 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:52:07 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:52:07 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:52:08 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:52:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:52:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:52:34 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:52:34 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:52:35 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:53:34 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:53:34 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::22:53:37 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:53:37 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:53:38 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:54:03 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:54:03 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:54:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{erlang,list_to_atom,[["proceso-punto-de-cuenta"]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:55:06 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:55:06 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:55:08 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{erlang,list_to_atom,[["proceso-punto-de-cuenta"]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::22:55:10 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{erlang,list_to_atom,[["proceso-punto-de-cuenta"]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:55:21 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:55:21 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:55:23 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,{'proceso-punto-de-cuenta_act1',[]}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p,5}]}
+
+=INFO REPORT==== 8-Jun-2008::22:56:14 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:56:14 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:56:17 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,
+            [{io_lib,format,
+                 ["~p~n",
+                  [[{'proceso-punto-de-cuenta_act1',[]},
+                    {'coor-verif-pdc',"Verificación de Punto de Cuenta"},
+                    {'proceso-punto-de-cuenta_act3',[]},
+                    {'proceso-punto-de-cuenta_act2',[]}],
+                   [{'proceso-punto-de-cuenta_tra1',[]}]]]},
+             {myappmod,out,1},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:56:41 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:56:41 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:56:42 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{io_lib,format,
+                 ["~s~s~n",
+                  [[{'proceso-punto-de-cuenta_act1',[]},
+                    {'coor-verif-pdc',"Verificación de Punto de Cuenta"},
+                    {'proceso-punto-de-cuenta_act3',[]},
+                    {'proceso-punto-de-cuenta_act2',[]}]],
+                  [[{'proceso-punto-de-cuenta_tra1',[]}]]]},
+             {myappmod,out,1},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::22:56:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::22:56:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::22:56:58 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{io_lib,format,
+                 ["~p~p~n",
+                  [[{'proceso-punto-de-cuenta_act1',[]},
+                    {'coor-verif-pdc',"Verificación de Punto de Cuenta"},
+                    {'proceso-punto-de-cuenta_act3',[]},
+                    {'proceso-punto-de-cuenta_act2',[]}]],
+                  [[{'proceso-punto-de-cuenta_tra1',[]}]]]},
+             {myappmod,out,1},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:02:02 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:02:02 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:02:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,
+            [{ktuo_json,encode_object,
+                 [[[{id,{string,'proceso-punto-de-cuenta_act3'}},
+                    {name,{string,[]}}]],
+                  [[34,"networks",34],
+                   58,
+                   [91,
+                    [123,
+                     [34,"name",34],
+                     58,
+                     [34,[],34],
+                     44,
+                     [34,"id",34],
+                     58,
+                     [34,"proceso-punto-de-cuenta_act2",34],
+                     125],
+                    93],
+                   125]]},
+             {ktuo_json,encode_object,2},
+             {ktuo_json,encode_array,2},
+             {ktuo_json,encode,1},
+             {ktuo_json,encode_object,2},
+             {myappmod,out,1},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:02:50 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:02:50 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:06:12 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:06:12 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:06:14 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.131>,
+                      {{127,0,0,1},52671},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.45.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:07:14 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{127,0,0,1},52675},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.45.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:07:18 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:07:18 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:10:15 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:10:15 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:10:23 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:10:23 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:10:47 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:10:47 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:11:12 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:11:12 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:11:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:11:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:13:20 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:13:20 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:14:12 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:14:12 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:14:13 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,
+            [{ktuo_json,encode,
+                 [{network,
+                      {places,
+                          [[[{id,{string,'coor-verif-pdc'}},
+                             {name,
+                                 {string,"Verificación de Punto de Cuenta"}}],
+                            [{id,{string,'proceso-punto-de-cuenta_act1'}},
+                             {name,{string,[]}}],
+                            [{id,{string,'proceso-punto-de-cuenta_act2'}},
+                             {name,{string,[]}}],
+                            [{id,{string,'proceso-punto-de-cuenta_act3'}},
+                             {name,{string,[]}}]]]},
+                      {transitions,
+                          [[[{id,{string,'proceso-punto-de-cuenta_tra1'}},
+                             {name,{string,[]}}],
+                            [{id,{string,'proceso-punto-de-cuenta_tra2'}},
+                             {name,{string,"Enviar al Analista"}}],
+                            [{id,{string,'proceso-punto-de-cuenta_tra3'}},
+                             {name,{string,[]}}]]]}}]},
+             {ktuo_json,encode_array,2},
+             {ktuo_json,encode,1},
+             {myappmod,out,1},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:14:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:14:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:17:26 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:17:26 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:26:36 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:27:39 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:27:43 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:28:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:28:11 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:28:32 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:38:02 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:38:02 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:38:16 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:38:16 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:38:27 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:38:27 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:38:58 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:38:58 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:39:00 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:42:42 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:42:42 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:42:44 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/"},{1,1}}
+
+=INFO REPORT==== 8-Jun-2008::23:44:58 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:44:58 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:45:28 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:45:28 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:46:46 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:46:46 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 8-Jun-2008::23:47:01 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 8-Jun-2008::23:47:01 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 8-Jun-2008::23:47:11 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/p"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:47:33 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:48:36 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 8-Jun-2008::23:48:42 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::00:04:12 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::00:04:18 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/undefined"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:21:05 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:21:05 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:22:10 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:22:16 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:26:40 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:26:40 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:27:33 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:27:33 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:27:42 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:27:43 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:27:58 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{badmatch,[]},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:34:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:34:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:34:34 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:34:49 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:35:41 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:35:41 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:36:17 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:36:17 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:36:19 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{172,16,56,13},23899},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 14:03:03 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.49.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:36:42 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{172,16,56,13},23899},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 14:03:18 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}},
+                      undefined,"/erlflow/net/dd",undefined,"net/dd",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/dd",
+                      undefined,undefined,<0.49.0>,[],"/","/","/net/dd"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:37:29 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:37:29 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:37:36 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:37:36 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:37:37 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,["~p~p~n",{format,["dd"],2}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:38:07 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:38:07 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:38:13 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:38:13 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:38:14 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,["~p:~i~n",{format,["dd"],2}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:38:42 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:38:42 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:38:43 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,
+                              ["~p:~p~n",{format,[["dd"]],[2]}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:38:44 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{io,request,
+                              ["~p:~p~n",{format,[["dd"]],[2]}]},
+                          {io,o_request,2},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:39:05 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:39:05 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:39:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:39:46 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:39:46 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:39:47 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:39:48 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:40:50 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:40:50 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:40:51 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:40:52 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:40:54 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:42:32 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:42:32 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:42:45 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:42:45 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:43:13 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:43:25 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:43:25 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:43:28 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:46:11 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:48:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:48:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:48:58 ===
+Failed to start: There is already a yaws system running with the same 
+ id <"erlflow"> on this computer and this user, 
+ set another id in the yaws conf file 
+
+
+=INFO REPORT==== 9-Jun-2008::09:49:02 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:49:02 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:49:08 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.32.0>,"~w~n",0]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:50:28 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:50:28 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:50:31 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:50:31 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:50:34 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.32.0>,"~f~n",0]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:50:36 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.32.0>,"~f~n",0]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:50:37 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.32.0>,"~f~n",0]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:50:54 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:50:54 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::09:50:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:50:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:51:00 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.32.0>,"~f~n",[0]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:52:03 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:52:03 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:52:05 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:52:11 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:52:11 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:52:13 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::09:56:03 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::09:56:03 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::09:56:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::09:56:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::10:01:47 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::10:01:47 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::10:13:45 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.29.0>,"~f~n",[0]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::10:29:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.29.0>,"~f~n",[0]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::11:08:58 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.29.0>,"~f~n",[2]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::11:21:24 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{io,format,[<0.29.0>,"~f~n",[0]]},
+                 {myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::11:22:00 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::11:22:00 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::11:22:05 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {if_clause,[{myappmod,prepare_response,1},
+                    {myappmod,out,1},
+                    {yaws_server,deliver_dyn_part,8},
+                    {yaws_server,aloop,3},
+                    {yaws_server,acceptor0,2},
+                    {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::11:28:28 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::11:28:28 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::11:28:29 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,23},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::11:29:07 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::11:29:07 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::11:29:09 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,23},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::11:29:28 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::11:29:28 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::11:30:19 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,2},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::11:37:28 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,2},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::11:57:17 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {{case_clause,2},
+         [{myappmod,prepare_response,1},
+          {myappmod,out,1},
+          {yaws_server,deliver_dyn_part,8},
+          {yaws_server,aloop,3},
+          {yaws_server,acceptor0,2},
+          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::12:50:21 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::12:50:21 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::12:59:19 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::12:59:19 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:00:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/ss"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:00:49 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:00:49 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:00:50 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:04:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/sss"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:06:58 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:06:58 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:07:06 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:07:06 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:07:08 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{172,16,56,13},55645},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:29:20 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.49.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:07:34 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{172,16,56,13},55645},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:33:26 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.49.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:08:07 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:08:07 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:08:08 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:08:09 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:08:35 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:08:35 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:08:36 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},55754},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:36:39 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:08:50 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:08:50 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:08:52 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:08:55 ===
+Failed to start: There is already a yaws system running with the same 
+ id <"erlflow"> on this computer and this user, 
+ set another id in the yaws conf file 
+
+
+=INFO REPORT==== 9-Jun-2008::13:08:59 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:08:59 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:09:02 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:03 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:04 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:05 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:06 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:07 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:09:07 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:10:21 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:10:21 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:10:27 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {badarg,[{myappmod,prepare_response,1},
+                 {myappmod,out,1},
+                 {yaws_server,deliver_dyn_part,8},
+                 {yaws_server,aloop,3},
+                 {yaws_server,acceptor0,2},
+                 {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/dd"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:17:04 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:17:04 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:17:07 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},57118},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:44:52 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.44.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:17:11 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},57118},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:42:41 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.44.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:17:14 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},57118},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:39:14 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.44.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:17:43 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},57118},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:38:51 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:17:52 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:17:52 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:17:55 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.137>,
+                      {{172,16,56,13},57185},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:45:36 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.49.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:18:46 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:18:46 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:19:05 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:19:05 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:19:25 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:19:25 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:19:46 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},57431},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:45:44 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.44.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:19:53 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:19:53 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:20:06 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:20:06 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:20:18 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:20:18 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:21:56 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:21:56 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:23:10 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:23:10 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:25:53 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:25:53 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:26:05 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:26:05 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:27:35 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:27:35 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:28:15 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:28:15 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:33:39 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:33:39 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:34:34 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},59672},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:56:06 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:34:39 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},59672},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:03:03 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:34:40 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},59672},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:03:09 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:34:41 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},59672},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:03:10 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.44.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:34:45 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},59672},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 17:57:34 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.44.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:37:49 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.133>,
+                      {{172,16,56,13},60179},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:57:36 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.58.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:37:53 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.133>,
+                      {{172,16,56,13},60179},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 17:51:43 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.58.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:44 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:06:22 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.59.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:45 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:07:13 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.59.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:45 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:07:14 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}},
+                      undefined,"/erlflow/net",undefined,"net",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net",
+                      undefined,undefined,<0.59.0>,[],"/","/","/net"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:49 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:06:19 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:51 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:07:18 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:51 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:07:20 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:38:52 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},60378},
+                      {headers,"Keep-Alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "172.16.27.33","Mon, 09 Jun 2008 18:07:21 GMT",
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.14) Gecko/20080512 Camino/1.6.1 (like Firefox/2.0.0.14)",
+                          undefined,[],undefined,undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-age=0"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr;q=0.6,de;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:39:01 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:39:01 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::13:42:58 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{172,16,56,13},61064},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 18:07:21 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.44.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:43:57 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.133>,
+                      {{172,16,56,13},61462},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 18:03:15 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}},
+                      undefined,"/erlflow/net/",undefined,"net/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/",
+                      undefined,undefined,<0.58.0>,[],"/","/","/net/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/net/"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:44:56 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.134>,
+                      {{172,16,56,13},61613},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 18:03:10 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',
+                          {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                          {1,1}},
+                      undefined,"/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,"net/proceso-punto-de-cuenta",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/net/proceso-punto-de-cuenta",
+                      undefined,undefined,<0.59.0>,[],"/","/",
+                      "/net/proceso-punto-de-cuenta"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',
+                   {abs_path,"/erlflow/net/proceso-punto-de-cuenta"},
+                   {1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::13:47:41 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{myappmod,out,
+                 [{arg,#Port<0.135>,
+                      {{172,16,56,13},61935},
+                      {headers,"Keep-Alive","text/html, */*","172.16.27.33",
+                          "Mon, 09 Jun 2008 18:11:28 GMT",undefined,undefined,
+                          undefined,undefined,undefined,undefined,
+                          "Mozilla/4.0 (compatible;)",undefined,[],undefined,
+                          undefined,undefined,undefined,undefined,undefined,
+                          undefined,
+                          [{http_header,0,"X-Bluecoat-Via",undefined,
+                               "48924ADA25666E33"},
+                           {http_header,1,'Cache-Control',undefined,
+                               "max-stale=0"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip, deflate, identity"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.60.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::13:47:58 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:47:58 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:49:15 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:49:15 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:49:31 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:49:31 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 9-Jun-2008::13:58:55 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 9-Jun-2008::13:58:55 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 9-Jun-2008::15:41:59 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 9-Jun-2008::15:45:43 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {function_clause,[{string,tokens1,[undefined,"/",[]]},
+                          {myappmod,prepare_response,1},
+                          {myappmod,out,1},
+                          {yaws_server,deliver_dyn_part,8},
+                          {yaws_server,aloop,3},
+                          {yaws_server,acceptor0,2},
+                          {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=INFO REPORT==== 9-Jun-2008::20:18:04 ===
+Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
+=INFO REPORT==== 10-Jun-2008::00:38:16 ===
+Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
