@@ -1,0 +1,31 @@
+html {
+    background-color: #dfb8df;
+}
+
+em#yahoolabel {
+    text-indent: -6em;
+    display: block;
+    background: url(http://us.i1.yimg.com/us.yimg.com/i/us/nt/b/purpley.1.0.gif) center center no-repeat;
+    width: 2em;
+    overflow: hidden;
+}
+
+#filemenu.visible .yuimenuitemlabel, #editmenu.visible .yuimenuitemlabel {
+
+* zoom:
+    1;
+}
+
+#filemenu.visible .yuimenu .yuimenuitemlabel {
+
+* zoom:normal;
+}
+
+#processesDiv {
+    border: thin;
+    border-color: #000000;
+    background: #fff;
+    margin-top: 1em;
+    padding: 1em;
+    min-height: 7em;
+}

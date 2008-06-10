@@ -21,7 +21,7 @@ body {
     height: 24px;
     position: absolute;
     top: 0px;
-    right: 46px;
+    right: 20px;
     width: 180px;
 }
 #search {
@@ -215,17 +215,27 @@ a {
 #composeBarWrap {
     background-color: #EDF5FF;
 }
+
+#caseEditorView {
+	width: 100%;
+	height: 100%;
+	background-color: #EDF5FF;
+}
+
+
 #composeAddr span {
     display: block;
     width: 99%;
     padding: .25em;
 }
+
 #composeAddr label {
     display: block;
     float: left;
     width: 4em;
     
 }
+
 #composeAddr input {
     border: 1px solid #808080;
     width: 90%;
@@ -344,6 +354,7 @@ a {
     background-image: url( example.png);
     background-position: -480px 0;
 }
+
 #homeView.selected span {
     background-position: -140px 0;
 }
@@ -357,6 +368,7 @@ a {
     background-image: url( example.png);
     background-position: -420px 0;
 }
+
 #composeView span.close,
 #newsView span.close {
     top: 4px;
@@ -364,12 +376,14 @@ a {
     opacity: .5;
     filter: alpha(opacity=50);
 }
+
 #composeView.selected span.close,
 #newsView.selected span.close,
 #composeView.selected span.icon {
     opacity: 1;
     filter: alpha(opacity=100);
 }
+
 #composeView span.icon {
     background-image: url( example.png);
     background-position: -440px 0;
@@ -379,8 +393,6 @@ a {
     opacity: .5;
     filter: alpha(opacity=50);
 }
-
-
 .yui-skin-sam .yui-layout-unit .yui-resize-handle-b {
     background-color: #f2f2f2;
     border-top: 1px solid #808080;

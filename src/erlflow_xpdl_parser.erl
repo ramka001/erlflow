@@ -1,12 +1,13 @@
 -module(erlflow_xpdl_parser).
 -include("/opt/local/lib/erlang/lib/xmerl-1.1.8/include/xmerl.hrl").
 
--export([process/1,net_sender_xpdl/2]).
+-export([start/0,process/1,net_sender_xpdl/2]).
 
+start() ->
+    register(net_sender_xpdl, spawn(erlflow_xpdl_parser, net_sender_xpdl, [[],[]])).
 
 process(FName) -> 
     {R,_} = xmerl_scan:file(FName),
-    register(net_sender_xpdl, spawn(erlflow_xpdl_parser, net_sender_xpdl, [[],[]])),
 	io:format("reading XPDL file~n"),
     extract(R, [])
 .
