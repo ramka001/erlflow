@@ -8074,3 +8074,481 @@ Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
 Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
 =INFO REPORT==== 10-Jun-2008::00:38:16 ===
 Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
+=INFO REPORT==== 10-Jun-2008::09:19:35 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::09:19:35 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.264>,
+                      {{127,0,0,1},49389},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,"http://localhost/admin/",
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,0,"X-Requested-With",undefined,
+                               "XMLHttpRequest"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/null"},{1,1}},
+                      undefined,"/erlflow/null",undefined,"null",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/null",
+                      undefined,undefined,<0.44.0>,[],"/","/","/null"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/null"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:25:55 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.264>,
+                      {{127,0,0,1},49389},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,"http://localhost/admin/",
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,0,"X-Requested-With",undefined,
+                               "XMLHttpRequest"},
+                           {http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.44.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:18 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:18 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.269>,
+                      {{127,0,0,1},49406},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow"},{1,1}},
+                      undefined,"/erlflow",undefined,undefined,
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow",
+                      undefined,undefined,<0.59.0>,[],"/","/",undefined}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:18 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:23 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:23 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.274>,
+                      {{127,0,0,1},49408},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/"},{1,1}},
+                      undefined,"/erlflow/",undefined,"/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/",
+                      undefined,undefined,<0.59.0>,[],"/","/","/"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:23 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:27 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:27 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:27 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.279>,
+                      {{127,0,0,1},49410},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.284>,
+                      {{127,0,0,1},49412},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.289>,
+                      {{127,0,0,1},49414},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=ERROR REPORT==== 10-Jun-2008::09:28:29 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.294>,
+                      {{127,0,0,1},49416},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.59.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=INFO REPORT==== 10-Jun-2008::09:28:46 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::09:28:46 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 10-Jun-2008::09:28:50 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:28:50 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{127,0,0,1},49420},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.44.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:28:50 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=INFO REPORT==== 10-Jun-2008::09:29:52 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::09:29:52 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=ERROR REPORT==== 10-Jun-2008::09:29:54 ===
+Loading of /Users/josemanuelp/erlflow/erlflow/ebin/efappmod.beam failed: badfile
+
+=ERROR REPORT==== 10-Jun-2008::09:29:54 ===
+
+
+ERROR erlang  code  crashed:
+ File: appmod:0
+Reason: {undef,
+            [{efappmod,out,
+                 [{arg,#Port<0.130>,
+                      {{127,0,0,1},49439},
+                      {headers,"keep-alive",
+                          "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+                          "localhost",undefined,undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-ES; rv:1.8.1.14) Gecko/20080404 Firefox/2.0.0.14",
+                          undefined,[],"300",undefined,undefined,undefined,
+                          undefined,undefined,undefined,
+                          [{http_header,9,'Accept-Charset',undefined,
+                               "ISO-8859-1,utf-8;q=0.7,*;q=0.7"},
+                           {http_header,10,'Accept-Encoding',undefined,
+                               "gzip,deflate"},
+                           {http_header,11,'Accept-Language',undefined,
+                               "es-es,es;q=0.8,en-us;q=0.5,en;q=0.3"}]},
+                      {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}},
+                      undefined,"/erlflow/nets",undefined,"nets",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public","/",
+                      "/Users/josemanuelp/erlflow/erlflow/ebin/../public/erlflow/nets",
+                      undefined,undefined,<0.44.0>,[],"/","/","/nets"}]},
+             {yaws_server,deliver_dyn_part,8},
+             {yaws_server,aloop,3},
+             {yaws_server,acceptor0,2},
+             {proc_lib,init_p,5}]}
+Req: {http_request,'GET',{abs_path,"/erlflow/nets"},{1,1}}
+
+=ERROR REPORT==== 10-Jun-2008::09:29:54 ===
+beam/beam_load.c(1035): Error loading module efappmod:
+  module name in object code is myappmod
+
+
+=INFO REPORT==== 10-Jun-2008::09:30:57 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::09:30:57 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 10-Jun-2008::15:03:31 ===
+Wrap log "/Users/josemanuelp/erlflow/erlflow/ebin/../var/log/yaws/localhost.access"
+=INFO REPORT==== 10-Jun-2008::16:07:17 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::16:07:17 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 10-Jun-2008::21:15:34 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::21:15:34 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 10-Jun-2008::21:25:30 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::21:25:30 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 10-Jun-2008::21:26:01 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::21:26:01 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
+
+=INFO REPORT==== 10-Jun-2008::21:26:46 ===
+Ctlfile : /Users/josemanuelp/.yaws/yaws/erlflow/CTL
+
+=INFO REPORT==== 10-Jun-2008::21:26:46 ===
+Yaws: Listening to 0.0.0.0:80 for servers
+ - http://localhost under /Users/josemanuelp/erlflow/erlflow/ebin/../public
