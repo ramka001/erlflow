@@ -4,7 +4,7 @@
 
     //Create this loader instance and ask for the Button module
     var loader = new YAHOO.util.YUILoader({
-        base: '../../build/',
+        base: '/build/',
         require: ['logger'],
         onSuccess: function() {
             var r = erlflow.app.layout.getUnitByPosition('right'),
