@@ -1,4 +1,4 @@
--module(myappmod).
+-module(efappmod).
 -author('klacke@bluetail.com').
 
 -include("/opt/local/lib/yaws/include/yaws_api.hrl").
@@ -31,7 +31,7 @@ prepare_response({Path, QueryStr}) ->
                 io:format("~w~n",[NetworkPid]),
                 NetworkPid !  {get_status, self()},
                 receive Response -> [Places, Transitions] = Response end,
-                NetworkList = [{places, prepare_json([Places])},{transitions,prepare_json([Transitions])}],
+                NetworkList = [{places, prepare_json(Places)},{transitions,prepare_json(Transitions)}],
                 ktuo_json:encode(NetworkList);
               true -> io_lib:format("invalid request: network doesn't exists. ID=~p~n",[Network])
             end;
@@ -41,7 +41,7 @@ prepare_response({Path, QueryStr}) ->
     end.
              
 prepare_json({Key, Value}) ->
-    [{id, {string, Key}},{name,{string, Value}}];
+  [{id, {string, Key}},{name,{string, Value}}];
 prepare_json([Head | Tail]) ->
-    lists:merge([prepare_json(Head)],prepare_json(Tail));
+  lists:merge([prepare_json(Head)],prepare_json(Tail));
 prepare_json([]) -> [].
