@@ -1,14 +1,23 @@
 (function(){
-
+    erlflow = new Object();
+    erlflow.admin = new Object();
+    
     YAHOO.util.Event.onDOMReady(function(){
         MainMenu();
         WelcomePanel();
         LogviewerPanel();
+        init_UploadProcessDialog();
     });
     
     function MainMenu(){
         function NewProcess_onClick(){
+            YAHOO.log('NewProcess_onClick called.');
             ProcessesPanel();
+        };
+        
+        function UploadProcess_onClick(){
+            YAHOO.log('UploadProcess_onClick called.');
+            erlflow.admin.dialog1.show();
         };
         
         var aItemData = [{
@@ -23,14 +32,17 @@
             submenu: {
                 id: "filemenu",
                 itemdata: [{
-                    text: "Nuevo proceso...",
+                    text: "Ver procesos...",
                     helptext: "Ctrl + P",
                     onclick: {
                         fn: NewProcess_onClick
                     }
                 }, {
-                    text: "Editar procesos...",
+                    text: "Subir procesos...",
                     helptext: "Ctrl + E",
+                    onclick: {
+                        fn: UploadProcess_onClick
+                    }
                 }, {
                     text: "Editar participantes...",
                     helptext: "Ctrl + U"
@@ -108,7 +120,7 @@
         var loader = new YAHOO.util.YUILoader();
         loader.insert({
             require: ['fonts', 'dragdrop', 'logger'],
-            base: '../../build/',
+            base: '/build/',
             
             onSuccess: function(loader){
                 // Put a LogReader on your page
@@ -134,6 +146,75 @@
         YAHOO.log('Rendering processes panel.', 'info', 'admin.js');
         oPanel.render(document.body);
         YAHOO.util.Get.script('/assets/js/ef/nets_table.js');
+        
+    }
+    
+    function init_UploadProcessDialog(){
+        var handleSubmit = function(){
+            var uploadHandler = {
+                upload: function(o){
+                    YAHOO.log(o.responseText);
+                    YAHOO.util.Dom.setStyle('indicator', 'visibility', 'hidden');
+                    var r = eval('(' + o.responseText + ')');
+                    if (r.hasError) {
+                        var errorString = '';
+                        for (var i = 0; i < r.errors.length; i++) {
+                            errorString += r.errors[i];
+                        }
+                        alert(errorString);
+                    }
+                    else {
+                        this.hide();
+                    }
+                }
+            };
+            YAHOO.util.Dom.setStyle('indicator', 'visibility', 'visible');
+            
+            YAHOO.util.Connect.setForm('uploadForm', true);
+            YAHOO.util.Connect.asyncRequest('POST', '/upload.yaws', uploadHandler);
+        };
+        
+        var handleCancel = function(){
+            this.cancel();
+        };
+        
+        var handleSuccess = function(o){
+            var response = o.responseText;
+            response = response.split("<!")[0];
+            document.getElementById("resp").innerHTML = response;
+        };
+        
+        var handleFailure = function(o){
+            alert("Submission failed: " + o.status);
+        };
+        
+        // Instantiate the Dialog
+        erlflow.admin.dialog1 = new YAHOO.widget.Dialog("dialog1", {
+            width: "30em",
+            fixedcenter: true,
+            visible: false,
+            constraintoviewport: true,
+            buttons: [{
+                text: "Submit",
+                handler: handleSubmit,
+                isDefault: true
+            }, {
+                text: "Cancel",
+                handler: handleCancel
+            }]
+        });
+        
+        // Wire up the success and failure handlers
+        erlflow.admin.dialog1.callback = {
+            success: handleSuccess,
+            failure: handleFailure
+        };
+        
+        // Render the Dialog
+        erlflow.admin.dialog1.render();
+        
+        YAHOO.util.Event.addListener("show", "click", erlflow.admin.dialog1.show, erlflow.admin.dialog1, true);
+        YAHOO.util.Event.addListener("hide", "click", erlflow.admin.dialog1.hide, erlflow.admin.dialog1, true);
         
     }
 })();

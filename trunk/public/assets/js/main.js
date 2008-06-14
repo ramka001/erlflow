@@ -1,10 +1,10 @@
-(function() {
-	erlflow =  new Object();
+(function(){
+    erlflow = new Object();
     erlflow.app = {
         inboxLoaded: false,
         inboxLoading: false,
         feedURL: '/erlflow',
-        getFeed: function(u) {
+        getFeed: function(u){
             if (!erlflow.app.inboxLoading) {
                 var reload = true;
                 erlflow.app.inboxLoading = true;
@@ -14,44 +14,64 @@
                     }
                     erlflow.app.feedURL = u + '?count=50';
                 }
-                YAHOO.util.Dom.addClass(erlflow.app.tabView._tabParent, 'loading');            
+                YAHOO.util.Dom.addClass(erlflow.app.tabView._tabParent, 'loading');
                 if (!erlflow.app.inboxLoaded) {
-                    var transactionObj = YAHOO.util.Get.script('/assets/js/inbox.js', { autopurge: true });
-                } else {
+                    var transactionObj = YAHOO.util.Get.script('/assets/js/inbox.js', {
+                        autopurge: true
+                    });
+                }
+                else {
                     if (reload) {
                         erlflow.app.reloadData(u);
-                    } else {
-                        YAHOO.util.Dom.removeClass(erlflow.app.tabView._tabParent, 'loading');            
+                    }
+                    else {
+                        YAHOO.util.Dom.removeClass(erlflow.app.tabView._tabParent, 'loading');
                         erlflow.app.inboxLoading = false;
                     }
                 }
             }
         }
     };
-
+    
     //Call loader the first time
     var loader = new YAHOO.util.YUILoader({
         base: 'build/',
         //Get these modules
         require: ['reset-fonts-grids', 'utilities', 'logger', 'button', 'container', 'tabview', 'selector', 'resize', 'layout'],
         rollup: true,
-        onSuccess: function() {
+        onSuccess: function(){
             //Load the global CSS file.
             YAHOO.log('Main files loaded..', 'info', 'main.js');
             YAHOO.util.Get.css('/assets/css/example1.css');
-
+            
             YAHOO.log('Create the first layout on the page', 'info', 'main.js');
             erlflow.app.layout = new YAHOO.widget.Layout({
                 minWidth: 1000,
-                units: [
-                    { position: 'top', height: 45, resize: false, body: 'top1' },
-                    { position: 'right', width: 300, body: '', header: 'Logger Console', collapse: true },
-                    { position: 'left', width: 190, resize: true, body: 'left1', gutter: '0 5 0 5px', minWidth: 190 },
-                    { position: 'center', gutter: '0 5px 0 2' }
-                ]
+                units: [{
+                    position: 'top',
+                    height: 45,
+                    resize: false,
+                    body: 'top1'
+                }, {
+                    position: 'right',
+                    width: 300,
+                    body: '',
+                    header: 'Logger Console',
+                    collapse: true
+                }, {
+                    position: 'left',
+                    width: 190,
+                    resize: true,
+                    body: 'left1',
+                    gutter: '0 5 0 5px',
+                    minWidth: 190
+                }, {
+                    position: 'center',
+                    gutter: '0 5px 0 2'
+                }]
             });
             //On resize, resize the left and right column content
-            erlflow.app.layout.on('resize', function() {
+            erlflow.app.layout.on('resize', function(){
                 var l = this.getUnitByPosition('left');
                 var th = l.get('height') - YAHOO.util.Dom.get('folder_top').offsetHeight;
                 var h = th - 4; //Borders around the 2 areas
@@ -59,18 +79,18 @@
                 YAHOO.util.Dom.setStyle('folder_list', 'height', h + 'px');
             }, erlflow.app.layout, true);
             //On render, load tabview.js and button.js
-            erlflow.app.layout.on('render', function() {
-                window.setTimeout(function() {
+            erlflow.app.layout.on('render', function(){
+                window.setTimeout(function(){
                     YAHOO.util.Get.script('assets/js/logger.js');
-                    YAHOO.util.Get.script('assets/js/tabview.js'); 
+                    YAHOO.util.Get.script('assets/js/tabview.js');
                     YAHOO.util.Get.script('assets/js/buttons.js');
                     YAHOO.util.Get.script('assets/js/calendar.js');
                 }, 0);
-
+                
                 erlflow.app.layout.getUnitByPosition('right').set('animate', false);
                 erlflow.app.layout.getUnitByPosition('right').collapse();
                 YAHOO.util.Dom.setStyle(document.body, 'visibility', 'visible');
-                setTimeout(function() {
+                setTimeout(function(){
                     erlflow.app.layout.resize();
                     erlflow.app.layout.getUnitByPosition('right').set('animate', true);
                 }, 1000);
@@ -78,7 +98,7 @@
             //Render the layout
             erlflow.app.layout.render();
             //Setup the click listeners on the folder list
-            YAHOO.util.Event.on('folder_list', 'click', function(ev) {
+            YAHOO.util.Event.on('folder_list', 'click', function(ev){
                 var tar = YAHOO.util.Event.getTarget(ev);
                 if (tar.tagName.toLowerCase() != 'a') {
                     tar = null;
@@ -98,10 +118,10 @@
                                 t[i].set('label', title);
                                 var u = false;
                                 if (feedName.indexOf('-') != -1) {
-                                    u = 'http:/'+'/rss.groups.yahoo.com/group/' + feedName + '/rss';
+                                    u = 'http:/' + '/rss.groups.yahoo.com/group/' + feedName + '/rss';
                                 }
                                 if (feedName.indexOf('inbox') != -1) {
-                                    u = 'http:/'+'/rss.groups.yahoo.com/group/ydn-javascript/rss';
+                                    u = 'http:/' + '/rss.groups.yahoo.com/group/ydn-javascript/rss';
                                 }
                                 erlflow.app.getFeed(u);
                                 erlflow.app.tabView.set('activeTab', t[i]);
@@ -111,42 +131,61 @@
                 }
             });
             
-            //Create a SimpleDialog used to mimic an OS dialog
-            var panel = new YAHOO.widget.SimpleDialog('alert', {
-                fixedcenter: true,
-                visible: false,
-                modal: true,
-                width: '300px',
-                constraintoviewport: true, 
-                icon: YAHOO.widget.SimpleDialog.ICON_WARN,
-                buttons: [
-                    { text: 'OK', handler: function() {
-                        panel.hide();
-                    }, isDefault: true }
-                ]
-            });
-            //Set the header
-            panel.setHeader('Alert');
-            //Give the body something to render with
-            panel.setBody('Notta');
-            //Render the Dialog to the body
-            panel.render(document.body);
-
-            //Create a namepaced alert method
-            erlflow.app.alert = function(str) {
-                YAHOO.log('Firing panel setBody with string: ' + str, 'info', 'main.js');
-                //Set the body to the string passed
-                panel.setBody(str);
-                //Set an icon
-                panel.cfg.setProperty('icon', YAHOO.widget.SimpleDialog.ICON_WARN);
-                //Bring the dialog to the top
-                panel.bringToTop();
-                //Show it
-                panel.show();
-            };
-
-            //erlflow.app.alert('This is not a new product from Yahoo! or YUI, just a demonstration of how YUI components can work in concert in the context of a more complex application.');
+            init_LoginDialog();
+            erlflow.app.login_dialog.bringToTop();
+            erlflow.app.login_dialog.show();
         }
     });
     loader.insert();
+    
+    function init_LoginDialog(){
+        var handleSubmit = function(){
+            erlflow.app.username = ;
+			this.hide();
+        };
+        
+        var handleCancel = function(){
+            this.cancel();
+        };
+        
+        var handleSuccess = function(o){
+            var response = o.responseText;
+            response = response.split("<!")[0];
+            document.getElementById("resp").innerHTML = response;
+        };
+        
+        var handleFailure = function(o){
+            alert("Submission failed: " + o.status);
+        };
+        
+        // Instantiate the Dialog
+        erlflow.app.login_dialog = new YAHOO.widget.Dialog("login_dialog", {
+            width: "30em",
+            fixedcenter: true,
+            visible: false,
+            modal: true,
+            constraintoviewport: true,
+            buttons: [{
+                text: "Submit",
+                handler: handleSubmit,
+                isDefault: true
+            }, {
+                text: "Cancel",
+                handler: handleCancel
+            }]
+        });
+        
+        // Wire up the success and failure handlers
+        erlflow.app.login_dialog.callback = {
+            success: handleSuccess,
+            failure: handleFailure
+        };
+        
+        // Render the Dialog
+        erlflow.app.login_dialog.render();
+        
+        YAHOO.util.Event.addListener("show", "click", erlflow.app.login_dialog.show, erlflow.app.login_dialog, true);
+        YAHOO.util.Event.addListener("hide", "click", erlflow.app.login_dialog.hide, erlflow.app.login_dialog, true);
+        
+    }
 })();
