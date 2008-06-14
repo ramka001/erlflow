@@ -6,41 +6,44 @@
 start() ->
     register(net_sender_xpdl, spawn(erlflow_xpdl_parser, net_sender_xpdl, [[],[]])).
 
-process(FName) -> 
-    {R,_} = xmerl_scan:file(FName),
-	io:format("reading XPDL file~n"),
-    extract(R, [])
-.
+process(FilePath) -> 
+    {R,_} = xmerl_scan:file(FilePath),
+	io:format("erlflow_xpdl_parser:process -> reading XPDL file~n"),
+    extract(R, []),
+    PathParts = string:tokens(FilePath,"/"),
+    FileName = lists:flatten(lists:sublist(PathParts,4,1)),
+    net_sender_xpdl ! {send_msg, {set_info, {deffile, FileName}}}.	
 
 net_sender_xpdl(Id, Name) ->
 	receive
         {setup_net, _Id, _Name} ->
-            io:format("setting up net ~s~n", [_Id]),
+            io:format("erlflow_xpdl_parser:net_sender_xpdl -> setting up net ~s~n", [_Id]),
             netsuper ! {add_net, _Id, _Name},
             net_sender_xpdl(_Id, _Name);
         {send_msg, Msg} ->
-            io:format("sending a message to ~p network~n~n", [Id]),
+            io:format("erlflow_xpdl_parser:net_sender_xpdl -> sending a message to ~p network~n~n", [Id]),
             %io:format("sending message ~w to ~s network~n~n", [Msg,[Id]]),
             Id ! Msg,
             net_sender_xpdl(Id, Name);
         _else ->
-            io:format("net_sender_xpdl Received:~p~n", [_else]),
+            io:format("erlflow_xpdl_parser:net_sender_xpdl -> net_sender_xpdl Received:~p~n", [_else]),
             net_sender_xpdl(Id, Name)
  	end.
             
 
 extract(R, L) when is_record(R, xmlElement) ->
+    %io:format("extract(~p).~n", [R]),
     case R#xmlElement.name of
-        'Package' ->
-            io:format("reading Package~n"),
+        'xpdl:Package' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:Package~n"),
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
-        'WorkflowProcesses' ->
-            io:format("reading WorkflowProcesses~n"),
+        'xpdl:WorkflowProcesses' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:WorkflowProcesses~n"),
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
-        'WorkflowProcess' ->
-            io:format("reading WorkflowProcess~n"),
+        'xpdl:WorkflowProcess' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:WorkflowProcess~n"),
             FFunc = fun(X) -> X#xmlAttribute.name == 'Id' end,
             io:format("~p~n",[R#xmlElement.attributes]),
             I = hd(lists:filter(FFunc, R#xmlElement.attributes)),
@@ -51,11 +54,11 @@ extract(R, L) when is_record(R, xmlElement) ->
  			net_sender_xpdl ! {setup_net, list_to_atom(Id), Name},
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
-        'Activities' ->
+        'xpdl:Activities' ->
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
-        'Activity' ->
-            io:format("reading Activity~n"),
+        'xpdl:Activity' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:Activity~n"),
             FFuncId = fun(X) -> X#xmlAttribute.name == 'Id' end,
             io:format("~p~n",[R#xmlElement.attributes]),
             I = hd(lists:filter(FFuncId, R#xmlElement.attributes)),
@@ -76,8 +79,8 @@ extract(R, L) when is_record(R, xmlElement) ->
             io:format("***lists:foldl call.~n"),
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
-        'Transition' ->
-            io:format("reading Transition~n"),
+        'xpdl:Transition' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:Transition~n"),
             FFuncId = fun(X) -> X#xmlAttribute.name == 'Id' end,
             io:format("~p~n",[R#xmlElement.attributes]),
             I = hd(lists:filter(FFuncId, R#xmlElement.attributes)),
@@ -111,16 +114,25 @@ extract(R, L) when is_record(R, xmlElement) ->
             To ! {input, NetId},
             
             lists:foldl(fun extract/2, L, R#xmlElement.content);
-
+        'xpdl:ProcessHeader' ->
+            ItemData = lists:foldl(fun extract/2, [], R#xmlElement.content),
+            io:format("erlflow_xpdl_parser:extract -> reading element: xpdl:ProcessHeader -> ~p~n", [ItemData]),
+            net_sender_xpdl ! {send_msg, {set_info, lists:flatten([ItemData])}};
         
         %item ->
         %    ItemData = lists:foldl(fun extract/2, [], R#xmlElement.content),
         %    [ ItemData | L ];
         
         _ -> 
-            io:format("reading element: ~s~n", [R#xmlElement.name]),
+            io:format("erlflow_xpdl_parser:extract -> reading element: ~p~n", [R#xmlElement.name]),
             lists:foldl(fun extract/2, L, R#xmlElement.content)
     end;
+
+extract(#xmlText{parents=[{'xpdl:Created',_},{'xpdl:ProcessHeader',_},_,_,_], value=V}, L) ->
+    [{created, V}|L];
+
+extract(#xmlText{parents=[{'xpdl:Description',_},{'xpdl:ProcessHeader',_},_,_,_], value=V}, L) ->
+    [{description, V}|L]; 
 
 extract(#xmlText{parents=[{title,_},{channel,2},_], value=V}, L) ->
     [{channel, V}|L]; 

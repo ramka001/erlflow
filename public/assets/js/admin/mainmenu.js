@@ -16,13 +16,13 @@ var MainMenu = function(){
         submenu: {
             id: "filemenu",
             itemdata: [{
-                text: "Nuevo proceso...",
+                text: "Ver procesos...",
                 helptext: "Ctrl + P",
                 onclick: {
                     fn: onClick
                 }
             }, {
-                text: "Editar procesos...",
+                text: "Subir proceso...",
                 helptext: "Ctrl + E",
             }, {
                 text: "Editar participantes...",

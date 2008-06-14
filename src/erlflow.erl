@@ -18,7 +18,12 @@ start() ->
 
 load_nets([Head|Tail]) ->
     io:format("~p~n", [Head]),
-    erlflow_xpdl_parser:process("../public/pdefs/" ++ Head),
+    Ext = lists:sublist(string:tokens(Head,"."),2,1),
+    if Ext == ["xpdl"] ->
+    	erlflow_xpdl_parser:process("../public/pdefs/" ++ Head);
+   	true ->
+      	[]
+    end,
     load_nets(Tail);
 load_nets([]) -> [].
 
