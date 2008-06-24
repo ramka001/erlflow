@@ -29,73 +29,6 @@
         </script>
     </head>
     <body class="yui-skin-sam">
-        <div id="top1">
-            <div id="top_wrap">
-                <div id="logo">
-                </div>
-                <div id="info">
-                    <strong>Usuario</strong>
-                    <span class="links"><a href="#">Cerrar Sesi&oacute;n</a>, <a href="#">Administrar</a></span>
-                </div>
-                <div id="searchBox">
-                    Buscar:<input type="text" size="25" id="query" value="Buscar casos o documentos..."><input type="button" id="search" value="Buscar">
-                </div>
-            </div>
-        </div>
-        <div id="left1">
-            <div id="folder_top">
-                <div class="wrap">
-                    <div id="check_buttons">
-                    </div>
-                </div>
-            </div>
-            <div id="folder_list">
-                <div class="wrap">
-                    <ul>
-                        <li class="inbox selected">
-                            <em></em>
-                            <a href="#">Casos Pendientes</a>
-                        </li>
-                        <li class="sent">
-                            <em></em>
-                            <a href="#">Casos Realizadas</a>
-                        </li>
-                        <li class="drafts">
-                            <em></em>
-                            <a href="#">Documentos</a>
-                        </li>
-                        <li class="spam">
-                            <em></em>
-                            <a href="#">Problemas</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="contacts">
-                            <em></em>
-                            <a href="http://addressbook.yahoo.com/" target="_blank">Participantes</a>
-                        </li>
-                        <li class="calendar">
-                            <em></em>
-                            <a href="http://calendar.yahoo.com/">Calendario</a>
-                        </li>
-                        <li class="notepad">
-                            <em></em>
-                            <a href="http://notepad.yahoo.com" target="_blank">Notas</a>
-                        </li>
-                    </ul>
-                    <div id="calBox">
-                        <span class="icon"></span>
-                        <em>05/28/2008</em>
-                    </div>
-                    <div id="calContainer">
-                        <div id="cal">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="composeViewEl">
-        </div>
         <style>
             #example {
                 height: 30em;
@@ -133,12 +66,79 @@
                 min-height: 7em;
             }
         </style>
+        <div id="top1">
+            <div id="top_wrap">
+                <div id="logo">
+                </div>
+                <div id="info">
+                    <strong>Usuario</strong>
+                    <span class="links"><a href="#">Cerrar Sesi&oacute;n</a>, <a href="/admin">Administrar</a></span>
+                </div>
+                <div id="searchBox">
+                    Buscar:<input type="text" size="25" id="query" value="Buscar casos o documentos..."><input type="button" id="search" value="Buscar">
+                </div>
+            </div>
+        </div>
+        <div id="left1">
+            <div id="folder_top">
+                <div class="wrap">
+                    <div id="check_buttons">
+                    </div>
+                </div>
+            </div>
+            <div id="folder_list">
+                <div class="wrap">
+                    <ul>
+                        <li class="inbox selected">
+                            <em></em>
+                            <a href="#">Casos Pendientes</a>
+                        </li>
+                        <li class="sent">
+                            <em></em>
+                            <a href="#">Casos Realizadas</a>
+                        </li>
+                        <li class="drafts">
+                            <em></em>
+                            <a href="#">Documentos</a>
+                        </li>
+                        <li class="spam">
+                            <em></em>
+                            <a href="#">Problemas</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="contacts">
+                            <em></em>
+                            <a href="#" target="_blank">Participantes</a>
+                        </li>
+                        <li class="calendar">
+                            <em></em>
+                            <a href="#">Calendario</a>
+                        </li>
+                        <li class="notepad">
+                            <em></em>
+                            <a href="#" target="_blank">Notas</a>
+                        </li>
+                    </ul>
+                    <div id="calBox">
+                        <span class="icon"></span>
+                        <em>05/28/2008</em>
+                    </div>
+                    <div id="calContainer">
+                        <div id="cal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="composeViewEl">
+        </div>
         <div id="new_case">
             <div class="hd">
                 Iniciar caso
             </div>
             <div class="bd">
-                <form method="POST" action="assets/post.php">
+                <form method="POST" action="#">
                     <label for="firstname">
                     </label>
                     <table width="100%" border="0" cellspacing="15">
@@ -149,17 +149,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td valign=middle>
                                 <div>
-                                    <img src="assets/documents.png" alt="documents" width="32" height="32">Tipo de Caso:
-                                </div>
-                                <div id="processesDiv" align="left">
+                                    <img src="/assets/css/process.png" alt="">&nbsp;&nbsp; Tipo de Caso:
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div align="left">
+                                <div id="processesDiv">
                                 </div>
                             </td>
                         </tr>

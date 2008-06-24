@@ -9,7 +9,7 @@
         onSuccess: function(){
             YAHOO.log('Inject some HTML for the content of this layout.', 'info', 'inbox.js');
             var d = document.createElement('div');
-            d.innerHTML = '<div id="top2"><div id="inboxToolbar"></div><div id="standard"></div></div><div id="center2"><div class="yui-layout-bd"><div id="preview"><p><strong>Got your eye on one of those messages up there?</strong></p><p>To view your message down here in this handy Reading pane, just click on it.</p></div></div></div>';
+            d.innerHTML = '<div id="top2"><div id="inboxToolbar"></div><div id="standard"></div></div><div id="center2"><div class="yui-layout-bd"><div id="preview"></div></div></div>';
             document.body.appendChild(d);
             YAHOO.log('Creating a second Layout for the inbox and preview pane', 'info', 'inbox.js');
             layout2 = new YAHOO.widget.Layout('inboxHolder', {

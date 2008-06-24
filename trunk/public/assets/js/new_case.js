@@ -1,7 +1,7 @@
 (function(){
 	var Dom = YAHOO.util.Dom,
         Event = YAHOO.util.Event;
-		//YAHOO.util.Get.script('assets/js/case_editor.js');
+		//YAHOO.util.Get.script('/assets/js/case_editor.js');
     function init(){
     
         // Define various event handlers for Dialog
@@ -33,7 +33,7 @@
                 erlflow.app.tabView.addTab(cTab);
                 YAHOO.log('Load the Editor', 'info', 'button.js');
                 window.setTimeout(function(){
-                    var transactionObj = YAHOO.util.Get.script('assets/js/case_editor.js', {
+                    var transactionObj = YAHOO.util.Get.script('/assets/js/case_editor.js', {
                         autopurge: true
                     });
                 }, 0);
@@ -64,7 +64,7 @@
         erlflow.app.new_case = new YAHOO.widget.Dialog("new_case", {
             width: "30em",
             fixedcenter: true,
-            visible: false,
+            visible: false,	
             constraintoviewport: true,
             buttons: [{
                 text: "Submit",
@@ -76,18 +76,6 @@
                 handler: handleCancel
             }]
         });
-        
-        // Validate the entries in the form to require that both first and last name are entered
-        erlflow.app.new_case.validate = function(){
-            var data = this.getData();
-            if (data.firstname == "" || data.lastname == "") {
-                alert("Please enter your first and last names.");
-                return false;
-            }
-            else {
-                return true;
-            }
-        };
         
         // Wire up the success and failure handlers
         erlflow.app.new_case.callback = {

@@ -54,6 +54,19 @@ extract(R, L) when is_record(R, xmlElement) ->
  			net_sender_xpdl ! {setup_net, list_to_atom(Id), Name},
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
+        'xpdl:DataField' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:DataField~n"),
+            FFunc = fun(X) -> X#xmlAttribute.name == 'Id' end,
+            io:format("~p~n",[R#xmlElement.attributes]),
+            I = hd(lists:filter(FFunc, R#xmlElement.attributes)),
+            FFunc2 = fun(X) -> X#xmlAttribute.name == 'Name' end,
+            V = hd(lists:filter(FFunc2, R#xmlElement.attributes)),
+            Id = I#xmlAttribute.value,
+            Name = V#xmlAttribute.value,
+            Length = lists:foldl(fun extract/2, [], R#xmlElement.content),
+            Msg = {add_field, {Id, Name, Length}},
+            net_sender_xpdl ! {send_msg, Msg};
+           
         'xpdl:Activities' ->
             lists:foldl(fun extract/2, L, R#xmlElement.content);
         
@@ -65,19 +78,34 @@ extract(R, L) when is_record(R, xmlElement) ->
             FFuncName = fun(X) -> X#xmlAttribute.name == 'Name' end,
             _V = lists:filter(FFuncName, R#xmlElement.attributes),
             _Vlength = lists:flatlength(_V),
-            NetId = list_to_atom(I#xmlAttribute.value),
+            NetPid = list_to_atom(I#xmlAttribute.value),
             if 
                 _Vlength > 0 ->
             		V = hd(_V),
-                    Msg = {add_place, NetId, V#xmlAttribute.value};
+                    Msg = {add_place, NetPid, V#xmlAttribute.value};
 				_Vlength == 0 ->
-                    Msg = {add_place, NetId, []}
+                    Msg = {add_place, NetPid, []}
 			end,
             io:format("***net_sender_xpdl:~p~n", [{send_msg, Msg}]),
             net_sender_xpdl ! {send_msg, Msg},
             io:format("***net_sender_xpdl: done.~n"),
             io:format("***lists:foldl call.~n"),
-            lists:foldl(fun extract/2, L, R#xmlElement.content);
+            ItemData = lists:foldl(fun extract/2, [], R#xmlElement.content),
+            io:format("erlflow_xpdl_parser:extract -> reading element: xpdl:Activity -> ~p~n", [ItemData]),
+            NetPid ! {add_form_field, lists:flatten([ItemData])};
+            %lists:foldl(fun extract/2, L, R#xmlElement.content);
+        
+        'xpdl:ExtendedAttribute' ->
+            io:format("erlflow_xpdl_parser:extract -> reading xpdl:ExtendedAttribute~n"),
+            FFuncName = fun(X) -> X#xmlAttribute.name == 'Name' end,
+            io:format("~p~n",[R#xmlElement.attributes]),
+            N = hd(lists:filter(FFuncName, R#xmlElement.attributes)),
+            FFuncValue = fun(X) -> X#xmlAttribute.name == 'Value' end,
+            V = hd(lists:filter(FFuncValue, R#xmlElement.attributes)),
+            Msg = {get_field, self(), V#xmlAttribute.value},
+			net_sender_xpdl ! {send_msg, Msg},
+			receive Response -> Response end, 
+            Response;
         
         'xpdl:Transition' ->
             io:format("erlflow_xpdl_parser:extract -> reading xpdl:Transition~n"),
@@ -128,11 +156,17 @@ extract(R, L) when is_record(R, xmlElement) ->
             lists:foldl(fun extract/2, L, R#xmlElement.content)
     end;
 
+extract(#xmlText{parents=[{'xpdl:Length',_},{'xpdl:DataField',_},_,_,_,_], value=V}, L) ->
+    [{length, V}|L];
+
 extract(#xmlText{parents=[{'xpdl:Created',_},{'xpdl:ProcessHeader',_},_,_,_], value=V}, L) ->
     [{created, V}|L];
 
 extract(#xmlText{parents=[{'xpdl:Description',_},{'xpdl:ProcessHeader',_},_,_,_], value=V}, L) ->
     [{description, V}|L]; 
+
+extract(#xmlText{parents=[{'xpdl:Performer',_},{'xpdl:Activity',_},_,_,_,_], value=V}, L) ->
+    [{performer, V}|L]; 
 
 extract(#xmlText{parents=[{title,_},{channel,2},_], value=V}, L) ->
     [{channel, V}|L]; 
