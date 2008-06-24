@@ -17,7 +17,7 @@
                     window.open('http:/'+'/search.yahoo.com/search?p=' + q);
                 }
             });
-            YAHOO.log('Create the Check Mail button', 'info', 'button.js');
+            YAHOO.log('Create the Check button', 'info', 'button.js');
             var b1 = new YAHOO.widget.Button({
                 label: 'Verificar',
                 id: 'checkButton',

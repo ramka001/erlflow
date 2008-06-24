@@ -9,7 +9,7 @@ out(A) ->
 
 showfile(FilePath) ->
     {ok, Cwd} = file:get_cwd(),
-    FName = "../public/pdefs/" ++ FilePath,
+    FName = Cwd ++ "/public/pdefs/" ++ FilePath,
     io:format("pdefsmod:showfile -> reading file ~p~n", [FName]),
     {ok, _Data} = file:read_file(FName),
     io:format("pdefsmod:showfile -> data ~p~n", [_Data]),

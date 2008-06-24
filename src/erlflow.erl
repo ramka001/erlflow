@@ -3,7 +3,7 @@
 %% Description: TODO: Add description to erlflow
 -module(erlflow).
 
--export([start/0]).
+-export([start/0,init/0]).
 
 %%
 %% API Functions
@@ -14,7 +14,11 @@ start() ->
     erlflow_xpdl_parser:start(),
     {ok, Files} = file:list_dir("../public/pdefs"),
     load_nets(Files),
+    db:start(),
     done.
+
+init() ->
+    db:init().
 
 load_nets([Head|Tail]) ->
     io:format("~p~n", [Head]),

@@ -5,22 +5,6 @@
         <xpdl:Vendor>Together</xpdl:Vendor>
         <xpdl:Created>2008-05-15 13:10:17</xpdl:Created>
     </xpdl:PackageHeader>
-    <xpdl:TypeDeclarations>
-        <xpdl:TypeDeclaration Id="newpkg_td1">
-            <xpdl:UnionType>
-                <xpdl:Member>
-                    <xpdl:BasicType Type="STRING"/>
-                </xpdl:Member>
-            </xpdl:UnionType>
-        </xpdl:TypeDeclaration>
-    </xpdl:TypeDeclarations>
-    <xpdl:DataFields>
-        <xpdl:DataField Id="newpkg_df1" IsArray="FALSE">
-            <xpdl:DataType>
-                <xpdl:BasicType Type="STRING"/>
-            </xpdl:DataType>
-        </xpdl:DataField>
-    </xpdl:DataFields>
     <xpdl:WorkflowProcesses>
         <xpdl:WorkflowProcess Id="proceso-punto-de-cuenta1" Name="Proceso de Punto de Cuenta">
             <xpdl:ProcessHeader>
@@ -35,14 +19,17 @@
                 </xpdl:FormalParameter>
             </xpdl:FormalParameters>
             <xpdl:DataFields>
-                <xpdl:DataField Id="proceso-punto-de-cuenta_df1" IsArray="FALSE" Name="Tipo de Cuenta">
+                <xpdl:DataField Id="proceso-punto-de-cuenta1_df1" IsArray="FALSE" Name="Dirección">
                     <xpdl:DataType>
-                        <xpdl:EnumerationType>
-                            <xpdl:EnumerationValue Name="corriente"/>
-                            <xpdl:EnumerationValue Name="ahorro"/>
-                        </xpdl:EnumerationType>
+                        <xpdl:BasicType Type="STRING"/>
                     </xpdl:DataType>
-                    <xpdl:Length>50</xpdl:Length>
+                    <xpdl:Length>100</xpdl:Length>
+                </xpdl:DataField>
+                <xpdl:DataField Id="proceso-punto-de-cuenta1_df2" IsArray="FALSE" Name="Cuenta">
+                    <xpdl:DataType>
+                        <xpdl:BasicType Type="STRING"/>
+                    </xpdl:DataType>
+                    <xpdl:Length>20</xpdl:Length>
                 </xpdl:DataField>
             </xpdl:DataFields>
             <xpdl:Participants>
@@ -87,7 +74,8 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="coordinador-de-presupuesto"/>
                         <xpdl:ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="253,37"/>
-                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="proceso-punto-de-cuenta_df1"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="proceso-punto-de-cuenta1_df1"/>
+                        <xpdl:ExtendedAttribute Name="VariableToProcess_VIEW" Value="proceso-punto-de-cuenta1_df2"/>
                     </xpdl:ExtendedAttributes>
                 </xpdl:Activity>
                 <xpdl:Activity Id="proceso-punto-de-cuenta_act3">

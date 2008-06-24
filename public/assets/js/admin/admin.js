@@ -5,7 +5,7 @@
     YAHOO.util.Event.onDOMReady(function(){
         MainMenu();
         WelcomePanel();
-        LogviewerPanel();
+        //LogviewerPanel();
         init_UploadProcessDialog();
     });
     
@@ -19,7 +19,10 @@
             YAHOO.log('UploadProcess_onClick called.');
             erlflow.admin.dialog1.show();
         };
-        
+        function LogViewer_onClick(){
+            YAHOO.log('UploadProcess_onClick called.');
+            LogviewerPanel();
+        };
         var aItemData = [{
             text: "<em id=\"yahoolabel\">ErlFlow!</em>",
             submenu: {
@@ -60,6 +63,7 @@
                     id: "logviewer",
                     text: "Registro de sucesos",
                     helptext: "Ctrl + Y",
+                    fn: LogViewer_onClick
                 }], [{
                     text: "Rendimiento",
                     helptext: "Ctrl + X",
