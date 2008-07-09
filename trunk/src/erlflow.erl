@@ -15,6 +15,8 @@ start() ->
     {ok, Files} = file:list_dir("../public/pdefs"),
     load_nets(Files),
     db:start(),
+    inets:start(),
+    application:start(ecouch),
     done.
 
 init() ->

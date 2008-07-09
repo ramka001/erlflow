@@ -192,7 +192,7 @@
             
         }
     }
-();
+})();
     
     YAHOO.util.Event.onDOMReady(Erlflow.main.treeProcesses.init, Erlflow.main.treeProcesses, true);
 })();

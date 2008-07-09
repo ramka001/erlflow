@@ -1,7 +1,7 @@
-#Wed May 14 18:24:32 VET 2008
+#Tue Jul 08 23:33:42 VET 2008
 source_dirs=src
 backend_cookie=
-otp_project_structure=true
+otp_project_structure=false
 backend_name=
 external_includes=
 include_dirs=include
