@@ -38,18 +38,26 @@ prepare_response({Path, QueryStr, Cookie}) ->
                                 1 ->
                                     UserId = lists:flatten(lists:sublist(PathParts,2,1)),
                                     Password = lookup_qsvalue(password, QueryStr),
-									%io:format("UserId=~p~n", [UserId]),
-									%io:format("Password=~p~n", [Password]),
-                                    {atomic, [User]} = db:read_user(UserId),
-									%io:format("User=~p~n", [User]),
-                                    SEq = string:equal(Password, User#user.password),
-                                    if
-                                        SEq ->
-                                            OP2 = OP#myopaque{userid = UserId},
-                                            yaws_api:replace_cookie_session(Cookie, OP2),
-                                            "login accepted";
-                                        true ->
-                                            "access denied"
+                                    io:format("QueryStr=~p~n", [QueryStr]),
+                                    io:format("UserId=~p~n", [UserId]),
+                                    io:format("Password=~p~n", [Password]),
+                                    {ok, {obj, RUser}} = ecouch:doc_get("users", UserId),
+                                    PwdSearch = lists:keysearch("password", 1, RUser),
+                                    Role = lists:keysearch("roles", 1, RUser),
+                                    io:format("User=~p~n", [RUser]),
+                                    case PwdSearch of
+                                        {value,{"password",PWD}} ->
+                                            SEq = string:equal(Password, erlang:binary_to_list(PWD)),
+                                            if
+                                                SEq ->
+                                                    OP2 = OP#myopaque{userid = UserId},
+                                                    yaws_api:replace_cookie_session(Cookie, OP2),
+                                                    "login accepted";
+                                                true ->
+                                                    "access denied"
+                                            end;
+                                    	false ->
+                    						"access denied"
                                     end;
                                 _Other ->  "invalid request"
                             end;  
@@ -75,8 +83,8 @@ prepare_response({Path, QueryStr, Cookie}) ->
                                         is_pid(NetworkPid) ->
                                             io:format("~w~n",[NetworkPid]),
                                             NetworkPid !  {get_status, self()},
-                                            receive Response -> [Info, Places, Transitions] = Response end,
-                                            NetworkList = [{info, prepare_json2(Info)}, {places, prepare_json(Places)},{transitions,prepare_json(Transitions)}],
+                                            receive Response -> [Info, Places, Transitions, Participants] = Response end,
+                                            NetworkList = [{info, prepare_json2(Info)}, {places, prepare_json(Places)},{transitions,prepare_json(Transitions)},{participants,prepare_json(Participants)}],
                                             ktuo_json:encode(NetworkList);
                                         true -> io_lib:format("invalid request: network doesn't exists. ID=~p~n",[Network])
                                     end;
@@ -96,13 +104,34 @@ prepare_response({Path, QueryStr, Cookie}) ->
                                             io:format("~w~n",[ActivityPid]),
                                             ActivityPid !  {get_status, self()},
                                             receive Response -> {status, [ID, Name, Inputs, Outputs, Tokens, Info, FormFields]} = Response end,
-                                            ReponseList = [{id, {string, ID}}, {name, {string, Name}}, {info, prepare_json2(Info)}, {fields, [prepare_json3(FormFields)]}],
+                                            ReponseList = [{id, {string, ID}}, {name, {string, Name}}, {info, prepare_json(Info)}, {fields, [prepare_json3(FormFields)]}],
                                             io:format("~p~n", [ReponseList]),
                                             ktuo_json:encode(ReponseList);
                                         true -> io_lib:format("invalid request: activity doesn't exists. ID=~p~n",[Activity])
                                     end;
                                 _Other -> "invalid request"
-                            end;           
+                            end;
+                        "performer" ->
+                            PartsCount = length(PathParts) - 1,
+                            io:format("PartsCount:~w~n", [PartsCount]),
+                            case PartsCount of
+                                0 ->
+                                    "invalid request";
+                                1 ->
+                                    Performer =  list_to_atom(lists:flatten(lists:sublist(PathParts,2,1))),
+                                    PerformerPid = whereis(Performer),
+                                    if 
+                                        is_pid(PerformerPid) ->
+                                            io:format("~w~n",[PerformerPid]),
+                                            PerformerPid !  {get_activity, self()},
+                                            receive Response -> {activities,  Activities} = Response end,
+                                            ReponseList = [{activities, [prepare_json2(Activities)]}],
+                                            io:format("~p~n", [ReponseList]),
+                                            ktuo_json:encode(ReponseList);
+                                        true -> io_lib:format("invalid request: activity doesn't exists. ID=~p~n",[Performer])
+                                    end;
+                                _Other -> "invalid request"
+                            end;
                         _Other -> "invalid request"
                     end
             end;

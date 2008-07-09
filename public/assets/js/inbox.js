@@ -90,7 +90,7 @@
                 
                 window.setTimeout(function(){
                     YAHOO.log('Using get to call the Yahoo! Pipe for the inbox feed', 'info', 'inbox.js');
-                    YAHOO.util.Get.script('/erlflow');
+                    //YAHOO.util.Get.script('/erlflow');
                 }, 0);
             }, layout2, true);
             layout2.render();

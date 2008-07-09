@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="/build/container/assets/skins/sam/container.css" />
         <script type="text/javascript" src="/build/utilities/utilities.js">
         </script>
-        <script type="text/javascript" src="/button/button-min.js">
+        <script type="text/javascript" src="/build/button/button-min.js">
         </script>
         <script type="text/javascript" src="/build/container/container-min.js">
         </script>
@@ -25,6 +25,7 @@
         </script>
         <script type="text/javascript" src= "/build/treeview/treeview-min.js">
         </script>
+		<script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/cookie/cookie-beta-min.js"></script> 
         <script src="/build/json/json-min.js">
         </script>
     </head>
@@ -71,8 +72,8 @@
                 <div id="logo">
                 </div>
                 <div id="info">
-                    <strong>Usuario</strong>
-                    <span class="links"><a href="#">Cerrar Sesi&oacute;n</a>, <a href="/admin">Administrar</a></span>
+                    <strong><div id="username_caption"></div></strong>
+                    <span class="links"><a href="#" id="close_session">Cerrar Sesi&oacute;n</a>, <a href="/admin">Administrar</a></span>
                 </div>
                 <div id="searchBox">
                     Buscar:<input type="text" size="25" id="query" value="Buscar casos o documentos..."><input type="button" id="search" value="Buscar">
@@ -180,7 +181,7 @@
                     <label for="username">
                         Nombre de Usuario:
                     </label>
-                    <input type="textbox" name="firstname" />
+                    <input type="textbox" name="username" />
                     <label for="password">
                         Contrase–a:
                     </label>
